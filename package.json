@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest --watchAll",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,8 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "hex-to-binary": "^1.0.1",
-    "pubnub": "^4.21.6"
-  }
+    "pubnub": "^4.21.6",
+    "snyk": "^1.230.5"
+  },
+  "snyk": true
 }
